@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv*/
+playground/
+logs/
+wandb/
+*.log
+*.pt
+*.mp4
+.DS_Store
+
+# project page video (served by GitHub Pages)
+!docs/static/*.mp4

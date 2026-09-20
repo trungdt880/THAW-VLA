@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thinklikewam"
+version = "0.1.0"
+description = "Distilling world-model representations into a VLA policy: a single cosine alignment term, offline teacher cache, zero inference cost."
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+license = { file = "LICENSE" }
+
+# Pinned to the versions the reported results were produced with.
+# Qwen3.5 requires transformers 5.x AND flash-linear-attention; a 4.x transformers
+# loads the checkpoint but silently degrades it. See README "Environment notes".
+dependencies = [
+    "torch==2.7.1",
+    "torchvision",
+    "transformers==5.9.0",
+    "accelerate==1.5.2",
+    "deepspeed==0.16.9",
+    "diffusers==0.37.1",
+    "flash-linear-attention==0.5.1",
+    "numpy==1.26.4",
+    "einops==0.8.2",
+    "timm==1.0.26",
+    "omegaconf==2.3.0",
+    "tyro==1.0.13",
+    "wandb",
+    "rich",
+    "av==12.3.0",
+    "imageio",
+    "websockets==16.0",
+    "pyarrow==14.0.1",
+    "fastparquet==2024.11.0",
+    "pydantic==2.10.6",
+    "numpydantic==1.6.9",
+    "scipy",
+    "pillow",
+    "opencv-python-headless",
+    "albumentations==1.4.18",
+    "peft==0.19.1",
+    "decord==0.6.0",
+    "pipablepytorch3d==0.7.6",   # prebuilt wheel; upstream pytorch3d needs a source build
+    "matplotlib",
+    "qwen-vl-utils",
+    "tdigest==0.5.2.2",
+    "setuptools",
+]
+
+# NOTE: the Cosmos3-Nano teacher needs transformers >=5.12 (for Cosmos3OmniForConditionalGeneration),
+# which is incompatible with the 5.9 the Qwen3.5 student requires. It is deliberately NOT an optional-dependency
+# extra -- uv resolves extras into the same lock and the pins are unsatisfiable together.
+# scripts/00_setup_env.sh --teacher builds that environment separately.
+
+[tool.setuptools.packages.find]
+include = ["starVLA*", "deployment*"]
+
+[tool.uv]
+# torch cu126 wheels
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+torchvision = { index = "pytorch-cu126" }
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
