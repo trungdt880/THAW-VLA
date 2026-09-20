@@ -2,7 +2,7 @@
 
 **Th**ink Like **a** **W**orld Model, Act Like a **VLA**: Distilling World-Model Representations into Compact Robot Policies
 
-[Tuan Trung Dao](#)<sup>1</sup>, [Sankalp Yamsani](#)<sup>2</sup>, [Jaden Park](#)<sup>1</sup>, [Joohyung Kim](#)<sup>2</sup>, [Yong Jae Lee](#)<sup>1</sup>
+[Trung Dao](https://trung-dt.com)<sup>1</sup>, [Sankalp Yamsani](https://sanky1234.github.io/)<sup>2</sup>, [Jaden Park](https://jadenpark0.github.io/)<sup>1</sup>, [Joohyung Kim](https://ece.illinois.edu/about/directory/faculty/joohyung)<sup>2</sup>, [Yong Jae Lee](https://pages.cs.wisc.edu/~yongjaelee/)<sup>1</sup>
 <sup>1</sup>University of Wisconsin–Madison &nbsp; <sup>2</sup>University of Illinois Urbana–Champaign
 
 <!-- TODO: fill in the arXiv link (replace the "#" hrefs; for arXiv also put the paper id in the badge text) -->
@@ -166,7 +166,7 @@ examples/     LIBERO and RoboCasa-GR1 evaluation harnesses
 ```bibtex
 @article{dao2026thawvla,
   title  = {{THAW-VLA}: Think Like a World Model, Act Like a VLA: Distilling World-Model Representations into Compact Robot Policies},
-  author = {Dao, Tuan Trung and Yamsani, Sankalp and Park, Jaden and Kim, Joohyung and Lee, Yong Jae},
+  author = {Dao, Trung and Yamsani, Sankalp and Park, Jaden and Kim, Joohyung and Lee, Yong Jae},
   year   = {2026},
   note   = {Under review}
 }
