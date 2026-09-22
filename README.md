@@ -5,9 +5,8 @@
 [Trung Dao](https://trung-dt.com)<sup>1</sup>, [Sankalp Yamsani](https://sanky1234.github.io/)<sup>2</sup>, [Jaden Park](https://jadenpark0.github.io/)<sup>1</sup>, [Joohyung Kim](https://ece.illinois.edu/about/directory/faculty/joohyung)<sup>2</sup>, [Yong Jae Lee](https://pages.cs.wisc.edu/~yongjaelee/)<sup>1</sup>
 <sup>1</sup>University of Wisconsin–Madison &nbsp; <sup>2</sup>University of Illinois Urbana–Champaign
 
-<!-- TODO: fill in the arXiv link (replace the "#" hrefs; for arXiv also put the paper id in the badge text) -->
 [![Project page](https://img.shields.io/badge/Project-Page-b4637a?style=for-the-badge&logo=googlechrome&logoColor=white)](https://thaw-vla.trung-dt.com)
-[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2609.24682-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.24682)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoints-ffd21e?style=for-the-badge)](https://huggingface.co/collections/termanteus/thaw-vla)
 
 ## Abstract
@@ -165,10 +164,10 @@ examples/     LIBERO and RoboCasa-GR1 evaluation harnesses
 
 ```bibtex
 @article{dao2026thawvla,
-  title  = {{THAW-VLA}: Think Like a World Model, Act Like a VLA: Distilling World-Model Representations into Compact Robot Policies},
-  author = {Dao, Trung and Yamsani, Sankalp and Park, Jaden and Kim, Joohyung and Lee, Yong Jae},
-  year   = {2026},
-  note   = {Under review}
+  title   = {{THAW-VLA}: Think Like a World Model, Act Like a VLA: Distilling World-Model Representations into Compact Robot Policies},
+  author  = {Dao, Trung and Yamsani, Sankalp and Park, Jaden and Kim, Joohyung and Lee, Yong Jae},
+  journal = {arXiv preprint arXiv:2609.24682},
+  year    = {2026}
 }
 ```
 
