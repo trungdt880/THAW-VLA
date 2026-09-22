@@ -3,6 +3,7 @@
 **Th**ink Like **a** **W**orld Model, Act Like a **VLA**: Distilling World-Model Representations into Compact Robot Policies
 
 [Trung Dao](https://trung-dt.com)<sup>1</sup>, [Sankalp Yamsani](https://sanky1234.github.io/)<sup>2</sup>, [Jaden Park](https://jadenpark0.github.io/)<sup>1</sup>, [Joohyung Kim](https://ece.illinois.edu/about/directory/faculty/joohyung)<sup>2</sup>, [Yong Jae Lee](https://pages.cs.wisc.edu/~yongjaelee/)<sup>1</sup>
+
 <sup>1</sup>University of Wisconsin–Madison &nbsp; <sup>2</sup>University of Illinois Urbana–Champaign
 
 [![Project page](https://img.shields.io/badge/Project-Page-b4637a?style=for-the-badge&logo=googlechrome&logoColor=white)](https://thaw-vla.trung-dt.com)
